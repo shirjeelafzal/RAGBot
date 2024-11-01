@@ -78,7 +78,9 @@ prompt = ChatPromptTemplate.from_messages([("human", message)])
 rag_chain = {"context": retriever, "question": RunnablePassthrough()} | prompt | llm
 
 while True:
-    
-    response = rag_chain.invoke(input("Ask: "))
+    user_input=input("Ask: ")
+    if user_input in ['exit','quit','stop']:
+        break
+    response = rag_chain.invoke(user_input)
 
     print(response.content)

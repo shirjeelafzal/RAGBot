@@ -1,7 +1,3 @@
-Here's a sample README for your RAG-based chatbot app:
-
----
-
 # RAGBot: A Retrieval-Augmented Generation (RAG) Chatbot
 
 RAGBot is an intelligent chatbot powered by Retrieval-Augmented Generation (RAG) that uses contextual information to answer user queries accurately and concisely. By integrating a custom retriever with a language model, RAGBot provides precise responses by searching relevant stored documents when available, or generating a concise answer otherwise.
